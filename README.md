@@ -1,2 +1,2 @@
 # DA558A_lab2
-Quiz
+School assignment - Quiz

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="stefan.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+</head>
+<body class="container">
+
+<h1>Quiz</h1>
+
+<form id="quizForm">
+    <header>
+        <fieldset class="user">
+            <legend>User Information</legend>
+            <label for="firstname">First name: *</label>
+            <input id="firstname" name="firstname" type="text" pattern="^[A-Za-zåäöÅÄÖ\s]+$" title="Only letters"
+                   placeholder="Enter your first name" required><br>
+            <div id="firstname_feedback" class="wrong"></div>
+            <label for="lastname">Last name: *</label>
+            <input id="lastname" name="lastname" type="text" pattern="^[A-Za-zåäöÅÄÖ\s]+$" title="Only letters"
+                   placeholder="Enter your last name" required><br>
+            <div id="lastname_feedback" class="wrong"></div>
+            <label for="email">Email: *</label>
+            <input id="email" name="email" type="email" placeholder="Enter your first name" required><br>
+            <div id="email_feedback" class="wrong"></div>
+        </fieldset>
+    </header>
+    <main>
+        <fieldset id="question1">
+            <legend>Question 1</legend>
+            <p>What is the capital of Germany?</p>
+            <label><input type="radio" name="answer1" value="Berlin">Berlin<br></label>
+            <label><input type="radio" name="answer1" value="Hamburg">Hamburg<br></label>
+            <label><input type="radio" name="answer1" value="Munich">Munich<br></label>
+            <label><input type="radio" name="answer1" value="Frankfurt">Frankfurt<br></label>
+            <div id="answer1_feedback"></div>
+        </fieldset>
+        <fieldset id="question2">
+            <legend>Question 2</legend>
+            <p>What is the default value of a boolean variable in Java? *</p>
+            <label><input type="radio" name="answer2" value="true" required>true<br></label>
+            <label><input type="radio" name="answer2" value="false" required>false<br></label>
+            <label><input type="radio" name="answer2" value="null" required>null<br></label>
+            <label><input type="radio" name="answer2" value="0" required>0<br></label>
+            <div id="answer2_feedback" class="wrong"></div>
+        </fieldset>
+        <fieldset id="question3">
+            <legend>Question 3</legend>
+            <p>Which keyword is used to create an instance of a class in Java? *</p>
+            <label><input type="radio" name="answer3" value="class">class<br></label>
+            <label><input type="radio" name="answer3" value="import">import<br></label>
+            <label><input type="radio" name="answer3" value="new">new<br></label>
+            <label><input type="radio" name="answer3" value="instance">instance<br></label>
+            <div id="answer3_feedback" class="wrong"></div>
+        </fieldset>
+        <fieldset id="question4">
+            <legend>Question 4</legend>
+            <p>Which of the following are valid Java access modifiers (Select all that apply)? *</p>
+            <label><input type="checkbox" name="answer4" value="public">public<br></label>
+            <label><input type="checkbox" name="answer4" value="protected">protected<br></label>
+            <label><input type="checkbox" name="answer4" value="default">default<br></label>
+            <label><input type="checkbox" name="answer4" value="private">private<br></label>
+            <label><input type="checkbox" name="answer4" value="final">final<br></label>
+            <div id="answer4_feedback" class="wrong"></div>
+        </fieldset>
+
+        <fieldset id="question5">
+            <legend>Question 5</legend>
+            <p>What is the sky for color to day?</p>
+            <input type="text" name="answer5"></input>
+            <div id="answer5_feedback"></div>
+        </fieldset>
+    </main>
+
+    <footer>
+        <div class="submit">
+            <button type="submit">Submit</button>
+        </div>
+        <div id="result" class="not-answered">
+            <p id="resultScoring">Score.</p>
+            <p id="resultText">You have not answered all questions yet.</p>
+        </div>
+    </footer>
+</form>
+
+<script src="stefan.js" type="text/javascript"></script>
+</body>
+</html>

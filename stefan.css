@@ -1,0 +1,52 @@
+
+* {
+    &,
+    &::before,
+    &::after {
+        box-sizing: border-box;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+.container {
+    padding-block: 2rem;
+    margin: 0 auto;
+    max-width: 50rem;
+}
+
+footer {
+    padding-block: 2rem;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+fieldset {
+    margin-top: 2rem;
+}
+
+.correct {
+    color: green;
+}
+.wrong {
+    color: darkred;
+}
+
+.not-answered {
+    display: none;
+}
+.answered {
+    display: block;
+}
+
+/*.user input:invalid {*/
+/*    border-color: red;*/
+/*}*/
+
+/*input:required:invalid {*/
+/*    border-color: #c00000;*/
+/*}*/
