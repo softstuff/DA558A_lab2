@@ -2,7 +2,7 @@
 
 const answerType = [":checked", ":checked",  ":checked", ":checked", ""]
 const corrects = ["Berlin", "true", "new", "public, protected, private", ""]
-const requires = [false, true, true, true, false]
+const requires = [true, true, true, true, false]
 
 function hasAnswered(answerId, answerType) {
     const answerElements = document.querySelectorAll(`input[name=${answerId}]${answerType}`);
